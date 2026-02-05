@@ -1,0 +1,21 @@
+{
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "mcpServers": {
+    "kali": {
+      "url":"http://127.0.0.1:5000"
+    },
+    "burp": {
+      "command": "/usr/bin/java",
+      "args": [
+      "-jar",
+      "/home/kali/mcp-proxy.jar",
+      "--sse-url",
+      "http://127.0.0.1:9876"
+      ]
+    }
+  }
+}
